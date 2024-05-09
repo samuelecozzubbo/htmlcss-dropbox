@@ -16,6 +16,10 @@ a{
     text-decoration: none;
 }
 
+h2{
+    padding: 3% 0;
+}
+
 /* Regole header */
 header #main-nav{
     background-color: yellow;
@@ -61,7 +65,7 @@ header ul{
 }
 
 .jumbo-img img{
-    max-width: 100%;
+    width: 100%;
 }
 
 #jumbotron h1{
@@ -76,5 +80,54 @@ header ul{
 }
 
 /* Regole main */
+main section{
+    width: 60%;
+    margin: 0 auto;
+    /* Debug */
+    height: 1000px;
+    background-color: burlywood;
+}
+
+section input{
+    margin: 0 20px;
+    padding: 0;
+}
+/* Sezione buisness plan */
+/* Plan tab */
+.plans-tabs{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2%;
+}
+
+.plan-tab{
+    width: 28%;
+    border: solid 1px gray;
+}
+
+.tab-heading{
+    border-bottom: solid 1px gray;
+    padding: 3%;
+    text-align: center;
+}
+
+.tab-main{
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 20px;
+    align-items: flex-start;
+    padding: 0 10%;
+}
+
+.tab-main ul li{
+    list-style: none;
+    margin-bottom: 8px;
+}
+
+.ul-check li:before{
+    content: "\2713";
+    color: blue;
+    font-weight: bold;
+}
 
 /* Regole footer */
