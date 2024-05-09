@@ -12,12 +12,20 @@
     padding: 10px 20px;
 }
 
+.white-button{
+    background-color: white;
+    color: gray;
+    border: solid 2px gray;
+    padding: 10px 20px;
+}
+
 a{
     text-decoration: none;
 }
 
 h2{
     padding: 3% 0;
+    font-size: 40px;
 }
 
 /* Regole header */
@@ -80,48 +88,65 @@ header ul{
 }
 
 /* Regole main */
-main section{
-    width: 60%;
+.container{
+    width: 100%;
     margin: 0 auto;
     /* Debug */
-    height: 1000px;
+    min-height: 600px;
+    background-color: aquamarine;
+}
+
+.row{
+    width: 60%;
+    margin: 2% auto;
+    display: flex;
+    justify-content: space-between;
     background-color: burlywood;
 }
 
-section input{
-    margin: 0 20px;
-    padding: 0;
-}
-/* Sezione buisness plan */
-/* Plan tab */
-.plans-tabs{
-    display: flex;
-    justify-content: space-between;
-    margin-top: 2%;
-}
-
-.plan-tab{
-    width: 28%;
+.col-30{
+    width: 30%;
     border: solid 1px gray;
 }
 
+.col-50{
+    width: 50%;
+}
+
+.col-100{
+    width: 100%;
+    border: solid 1px gray;
+}
+
+/* Sezione buisness plan */
+#billing-choise{
+    width: 60%;
+    margin: 0 auto;
+}
+
+section input{
+    padding: 0;
+}
+/* Plan tab */
+
 .tab-heading{
     border-bottom: solid 1px gray;
-    padding: 3%;
+    padding: 1%;
     text-align: center;
 }
 
 .tab-main{
     display: flex;
     flex-flow: column nowrap;
-    gap: 20px;
     align-items: flex-start;
-    padding: 0 10%;
+    justify-content: space-between;
+    padding: 0 15%;
+    gap: 30px;
 }
 
 .tab-main ul li{
     list-style: none;
-    margin-bottom: 8px;
+    margin-bottom: 10px;
 }
 
 .ul-check li:before{
@@ -130,4 +155,29 @@ section input{
     font-weight: bold;
 }
 
+#tab-horizontal-text{
+    display: flex;
+    flex-flow: column wrap;
+    gap: 20px;
+}
+
+.col-100 .tab-main{
+    display: flex;
+    flex-flow: row;
+    padding: 20px;
+}
+
+/* Sezione partner */
+.col-50 img{
+    width: 100%;
+    padding: 5%;
+}
+
+.col-50.partner{
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 20px;
+}
 /* Regole footer */
