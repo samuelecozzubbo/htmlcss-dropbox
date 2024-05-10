@@ -1,0 +1,58 @@
+/* button hover */
+.button:hover{
+    opacity: 0.7;
+    transition: all 0.2s ease-in-out;
+}
+
+#main-nav a:hover{
+    border-bottom: 2px solid black;
+    transition: all 0.1s;
+}
+/* Customer hover */
+.square:hover{ 
+    border: inset 15px white;
+    transition: all 0.5s;
+}
+
+/* Question hover */
+.questions p{
+    display: none;
+}
+
+.questions:hover p{
+    display: block;
+    transition: all 1s ease-in-out;
+}
+
+/* Footer a */
+footer a:hover{
+    border-bottom:2px solid  white;
+    transition: 0.5s ease;
+}
+
+/* Dropdown*/
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .dropdown-content a:hover {background-color: #ddd;}
+  
+  .dropdown:hover .dropdown-content {display: block;}
+  
