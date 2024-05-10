@@ -20,8 +20,8 @@
 }
 
 .questions:hover p{
-    display: block;
     transition: all 1s ease-in-out;
+    display: block;
 }
 
 /* Footer a */

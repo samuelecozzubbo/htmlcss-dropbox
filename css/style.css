@@ -32,6 +32,7 @@ header ul{
 #jumbo-container{
     max-width: 1000px;
     background-color: rgb(130, 130, 253);
+    position: relative;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
@@ -40,21 +41,28 @@ header ul{
 }
 
 .jumbo-text{
-    width: 70%;
+    width: 30%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    gap: 35px;
 }
 
 .jumbo-img img{
-    width: 100%;
+    max-width: 700px;
+}
+
+.jumbo-img{
+    position: absolute;
+    top: 0;
+    right: 0;
 }
 
 #jumbotron h1{
     font-size: 70px;
     font-weight: 800;
     max-width: 1000px;
-    margin: 0  auto;
+    margin: 30px  auto;
 }
 
 .fa-arrow-down{
@@ -108,10 +116,17 @@ section input{
 /* Sezione partner */
 .col-50 img{
     width: 100%;
-    padding: 5%;
+    padding: 4%;
+}
+
+.col-50{
+    flex-basis: 0;
+    flex-grow: 2;
 }
 
 .col-50.partner{
+    flex-grow: 1;
+    flex-basis: 0;
     display: flex;
     flex-flow: column nowrap;
     justify-content: center;
@@ -120,6 +135,10 @@ section input{
 }
 
 /* Dropbox Buisness section*/
+.row.buisness{
+    flex-wrap: wrap;
+}
+
 .col-30 img{
     max-width: 100%;
 }
@@ -141,9 +160,9 @@ section input{
 }
 .square img{
     filter: invert(1);
-    padding: 32%;
-    max-width: 100%;
-    max-height: 100%;
+    padding: 80px;
+    width: 100%;
+    height: 200px;
 }
 
 .col-50.customer{
