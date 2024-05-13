@@ -1,7 +1,7 @@
 
 /* Regole header */
 header #main-nav{
-    background-color: yellow;
+    background-color: white;
     min-height: 80px;
     width: 100%;
     display: flex;
@@ -24,20 +24,20 @@ header ul{
 #jumbotron{
     /* Debug */
     width: 100%;
-    background-color: rgb(0, 255, 255);
+    background-color: rgb(168, 209, 255);
     padding-top: 5%;
     margin-bottom: 3%;
 }
 
 #jumbo-container{
     max-width: 1000px;
-    background-color: rgb(130, 130, 253);
     position: relative;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
     /* Debug */
-    /* height: 480px; */
+    /* height: 480px;
+    background-color: rgb(130, 130, 253); */
 }
 
 .jumbo-text{
@@ -216,13 +216,13 @@ footer{
 footer .row-100.center{
     background-color: black;
     padding: 40px 0;
-    justify-content: center;
+    justify-content: space-between;
 }
 
 footer .row-100.left{
     background-color: black;
     flex-direction: column;
-    align-items: flex-start;
+    padding-left: 50px;
 }
 
 .col-footer .heading{
@@ -235,17 +235,10 @@ footer .row-100.left{
     font-weight: lighter;
 }
 .col-footer li{
-    margin: 20px;
+    margin: 20px 0;
     list-style: none;
 }
 
-footer .interline{
-    margin-left: 15%;
-}
-
-#language{
-    margin: 20px 15%;
-}
 #language::after{
     border-style: solid;
     border-width: 0 0 0.15em 0.15em;

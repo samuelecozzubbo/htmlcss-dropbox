@@ -10,8 +10,17 @@
 }
 /* Customer hover */
 .square:hover{ 
-    border: inset 15px white;
-    transition: all 0.5s;
+    border: solid 15px rgb(205, 205, 205);
+    transition: border 0.5s;
+}
+
+.customer-display{
+  opacity: 0;
+  transition: all 1s;
+}
+
+body:has(.square:hover) .customer-display{
+  opacity: 1;
 }
 
 /* Question hover */
@@ -20,7 +29,7 @@
 }
 
 .questions:hover p{
-    transition: all 1s ease-in-out;
+    transition: all 2s ease-in-out;
     display: block;
 }
 
